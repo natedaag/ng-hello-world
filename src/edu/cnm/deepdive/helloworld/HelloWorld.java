@@ -18,18 +18,18 @@ public class HelloWorld {
 	public static void main(String[] args) {
 		String target;
 		String message;
-		if (args.length >0) {
+		if (args.length > 0) {
 			target = args[0];
 		} else {
 			target = "World";
-			
+
 		}
-		message = String.format("Hello %s!",  target);
+		message = String.format("Hello %s!", target);
 		// TODO Auto-generated method
 		emitMessage(message);
-		for (int i = 1; i < args.length; i++) {
-System.out.printf("Arg # %d is %s%n", i, args[i]);
-	}
+		for (String arg : args) {
+			System.out.printf("Argument: %s%n", arg);
+		}
 	}
 }
 /**
