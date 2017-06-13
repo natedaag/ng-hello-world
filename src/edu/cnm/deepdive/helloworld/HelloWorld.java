@@ -24,7 +24,9 @@ public class HelloWorld {
 			target = "World";
 
 		}
-		System.getProperties().list(System.out);		message = String.format("Hello %s!", target);
+		System.getProperties().list(System.out);
+		assert args.length > 10; 
+		message = String.format("Hello %s!", target);
 		// TODO Auto-generated method
 		emitMessage(message);
 		for (String arg : args) {
